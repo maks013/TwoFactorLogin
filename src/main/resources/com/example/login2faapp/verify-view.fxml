@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" style="-fx-background-color: #23395D;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login2faapp.controller.ControllerVerifyView">
+   <children>
+      <Label fx:id="verifyMessageLabel" alignment="CENTER" layoutX="1.0" layoutY="165.0" prefHeight="17.0" prefWidth="520.0" textFill="#ff2222">
+         <font>
+            <Font name="Verdana" size="11.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="116.0" prefHeight="17.0" prefWidth="520.0" text="Check your e-mail!" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="115.0" layoutY="194.0" prefHeight="17.0" prefWidth="67.0" text="Code:" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="verificationCodeTextField" layoutX="194.0" layoutY="191.0" prefHeight="25.0" prefWidth="133.0" promptText="Input verification code" />
+      <Label alignment="CENTER" layoutY="344.0" prefHeight="17.0" prefWidth="520.0" text="Copyright (c). All Rights Reserved." textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Button fx:id="verifyButton" layoutX="194.0" layoutY="227.0" mnemonicParsing="false" onAction="#verifyButtonOnAction" prefHeight="29.0" prefWidth="133.0" text="Verify">
+         <font>
+            <Font name="Verdana" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="194.0" layoutY="264.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="29.0" prefWidth="133.0" text="Cancel">
+         <font>
+            <Font name="Verdana" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
